@@ -9,8 +9,8 @@ body{
 }
 
 .heart {
-    height: 200px;
-    width: 200px;
+    height: 600px;
+    width: 600px;
     background-color: black;
     position: relative;
     transform: rotate(45deg);
@@ -25,12 +25,19 @@ body{
      
 }
 h1 {
-    color: white
+    color: white;
+    font-size: 50px;
 }
-h2 { color : white
+h2 { color : white;
+    font-size: 50px;
 }
 h3{
-    color: white
+    color: white;
+    font-size: 50px;
+}
+h4{
+    color: white;
+    font-size: 50px;
 }
 
 @keyframes palpitar{
@@ -47,8 +54,8 @@ h3{
 .heart::before{
     content: "";
     position: absolute;
-    height: 200px;
-    width: 200px;
+    height: 600px;
+    width: 600px;
     background: rgb(0, 0, 0);
     top: -50%;
     border-radius: 50%;
@@ -57,8 +64,8 @@ h3{
 .heart::after{
     content: "";
     position: absolute;
-    height: 200px;
-    width: 200px;
+    height: 600px;
+    width: 600px;
     background: rgb(0, 0, 0);
     right: 50%;
     border-radius: 50%;
