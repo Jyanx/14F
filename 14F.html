@@ -4,77 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>corazonlatiendo</title>
 </head>
-<style>
-body{
-    margin:0;
-    padding:0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
-}
-
-.heart {
-    height: 200px;
-    width: 200px;
-    background-color: black;
-    position: relative;
-    transform: rotate(45deg);
-    box-shadow: -20px  20px 150px #000000;
-    animation: palpitar 0.5s linear infinite alternate;
-    
-}
-.contenido {
-     position: fixed;
-     margin-bottom: 50px;
-     text-align: center;
-     
-}
-h1 {
-    color: white
-}
-h2 { color : white
-}
-h3{
-    color: white
-}
-
-@keyframes palpitar{
-    0%{
-        transform: rotate(45deg) scale(1.20);
-    }
-    80%{
-        transform: rotate(45deg) scale(1.0);
-    }
-    100%{
-        transform: rotate(45deg) scale(0.8);
-    } 
-}
-.heart::before{
-    content: "";
-    position: absolute;
-    height: 200px;
-    width: 200px;
-    background: rgb(0, 0, 0);
-    top: -50%;
-    border-radius: 50%;
-    box-shadow: 10px  20px 150px #000000;
-}
-.heart::after{
-    content: "";
-    position: absolute;
-    height: 200px;
-    width: 200px;
-    background: rgb(0, 0, 0);
-    right: 50%;
-    border-radius: 50%;
-    box-shadow: 20px  20px 150px #000000;
-}
-
-</style>
 <body>
     <div class="heart"></div>
 
